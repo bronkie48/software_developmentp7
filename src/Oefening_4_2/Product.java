@@ -1,4 +1,4 @@
-package Oefening_4_1;
+package Oefening_4_2;
 
 public class Product extends Bestelling
 {
