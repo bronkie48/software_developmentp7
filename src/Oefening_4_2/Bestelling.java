@@ -2,7 +2,7 @@ package Oefening_4_2;
 
 public class Bestelling  
 {
-	static int bestelNummer;
+	private static int bestelNummer;
 	
 	public static int Bestelnummer() 
 	{
