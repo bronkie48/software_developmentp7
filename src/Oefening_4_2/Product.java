@@ -9,6 +9,9 @@ public class Product extends Bestelling
 	private double prijs;
 	private ArrayList<Product> productenlijst = new ArrayList<Product>();
 	
+	public Product() {
+	}
+	
 	public Product(Product p1) {
 		productenlijst.add(p1);
 	}

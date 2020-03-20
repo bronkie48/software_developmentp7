@@ -5,6 +5,10 @@ public class Klant extends Bestelling
 	private String naam;
 	private int nummer;
 	
+	public Klant() {
+		
+	}
+	
 	public Klant(String naam) {
 		this.naam= naam;
 	}
