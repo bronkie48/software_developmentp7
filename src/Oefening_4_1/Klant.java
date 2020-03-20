@@ -4,6 +4,9 @@ public class Klant extends Bestelling {
 	private String naam;
 	private int nummer;
 	
+	public Klant(String naam) {
+		this.naam= naam;
+	}
 	public String getNaam() {
 		return naam;
 	}

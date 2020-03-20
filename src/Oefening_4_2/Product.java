@@ -1,9 +1,17 @@
 package Oefening_4_2;
 
+import java.util.ArrayList;
+
+
 public class Product extends Bestelling
 {
 	private String omschrijving;
 	private double prijs;
+	private ArrayList<Product> productenlijst = new ArrayList<Product>();
+	
+	public Product(Product p1) {
+		productenlijst.add(p1);
+	}
 	
 	public double getPrijs() 
 	{
