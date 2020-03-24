@@ -19,6 +19,6 @@ public class App {
 	
 		
 		System.out.println(" Student: " + student.getNaam() + "\r nummer: " + student.getNr() + "\r Geboorte datum: " + gebdatum + "\r Studieprogramma: " + prog);
-		System.out.println(" Studieprogramma: " + "\r Startdatum: "+ start + "\r Einddatum: " + eind + "\r Vaklijst " + list);
+		System.out.println("\r Startdatum: "+ start + "\r Einddatum: " + eind + "\r Vaklijst " + list);
 	}
 }

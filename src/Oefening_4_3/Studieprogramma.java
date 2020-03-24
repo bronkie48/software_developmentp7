@@ -8,7 +8,6 @@ public class Studieprogramma {
 	private Datum eindDatum;
 	
 	private ArrayList<Vak> vaklijst;
-	
 
 	public Studieprogramma (Datum start, Datum eind, ArrayList<Vak> lijst) {
 		this.startDatum=start;
@@ -17,7 +16,7 @@ public class Studieprogramma {
 	}
 	
 	public String toString() {
-		return "Studieprogramma: ";
+		return "Applicatie Ontwikkelaar ";
 	}
 	
 	public Datum getStartDatum() {
