@@ -1,11 +1,12 @@
 package Oefening_4_1;
 
-public class Klant extends Bestelling {
+public class Klant {
 	private String naam;
 	private int nummer;
 	
-	public Klant(String naam) {
+	public Klant(String naam, int nummer) {
 		this.naam= naam;
+		this.nummer=nummer;
 	}
 	public String getNaam() {
 		return naam;

@@ -1,27 +1,17 @@
 package Oefening_4_2;
 
-public class Klant extends Bestelling 
-{
+public class Klant {
 	private String naam;
 	private int nummer;
 	
-	public Klant() {
-		
-	}
-	
-	public Klant(String naam) {
+	public Klant(String naam, int nummer) {
 		this.naam= naam;
+		this.nummer=nummer;
 	}
-	
-	public String getNaam() 
-	{
-		naam="kees";
+	public String getNaam() {
 		return naam;
 	}
-	public int getNummer() 
-	{
-		nummer=123;
+	public int getNummer() {
 		return nummer;
 	}
 }
-

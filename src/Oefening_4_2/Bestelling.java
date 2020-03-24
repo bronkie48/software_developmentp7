@@ -1,46 +1,28 @@
 package Oefening_4_2;
 
+import java.util.ArrayList;
+
+
 public class Bestelling  
 {
-	private static int bestelNummer;
+	private int bestelNummer;
+	private ArrayList<Product> productlijst;
 	
-	public static int Bestelnummer() 
+	public Bestelling(int bestelnr, ArrayList<Product> list) {
+		this.bestelNummer=bestelnr;
+		this.productlijst=list;
+	}
+	public int getBestelnummer() 
 	{
-		int bestelNummer = 12;
 		return bestelNummer;
 	}
-	public static int getKlantnummer() 
-	{
-		Klant k = new Klant();
-		int klantNummer = k.getNummer();
-		return klantNummer;
+	public ArrayList<Product> getProductlijst() {
+		return productlijst;
 	}
-	public static String getKlantnaam() 
-	{
-		Klant k = new Klant();
-		String naam = k.getNaam();
-		return naam;
+	public void setProductlijst(ArrayList<Product> productlijst) {
+		this.productlijst = productlijst;
 	}
-	public static String getProductOmschrijving() 
-	{
-		Product p = new Product();
-		String omschrijving = p.toString();
-		return omschrijving;
-	}
-	public static double getProductPrijs() 
-	{
-		Product p = new Product();
-		double prijs= p.getPrijs();
-		return prijs;
-	}
-	
-	public static void print() 
-	{
-		System.out.println("De gegevens van de klant: \r Bestelnummer: " + Bestelnummer()  + "\r Klantnummer: " + getKlantnummer() + "\r Naam: "
-							+ getKlantnaam() + "\r Omschrijving: "+ getProductOmschrijving() + 
-							"\r Productprijs: " + getProductPrijs()	);
-	}
-	public static void main( String args[] ) {
-		print();
+	public String print() {
+		return "Bestelling met bestelnummer:"+ bestelNummer+" \r ";
 	}
 }

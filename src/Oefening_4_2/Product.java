@@ -3,27 +3,27 @@ package Oefening_4_2;
 import java.util.ArrayList;
 
 
-public class Product extends Bestelling
+public class Product 
 {
 	private String omschrijving;
 	private double prijs;
-	private ArrayList<Product> productenlijst = new ArrayList<Product>();
+	private ArrayList<Product> productenlijst;
 	
-	public Product() {
+	public Product(String om, double prijs) {
+		this.omschrijving=om;
+		this.prijs=prijs;
 	}
 	
-	public Product(Product p1) {
-		productenlijst.add(p1);
+	public String getOmschrijving() {
+		return omschrijving;
 	}
-	
-	public double getPrijs() 
-	{
-		prijs = 1.0;
+	public double getPrijs() {
 		return prijs;
 	}
-	public String toString() 
-	{
-		omschrijving = "test123";
-		return omschrijving;
+	public ArrayList<Product> getProductenlijst() {
+		return productenlijst;
+	}
+	public String toString() {
+		return omschrijving + " " + prijs;
 	}
 }
