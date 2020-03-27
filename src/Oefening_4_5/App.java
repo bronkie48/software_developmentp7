@@ -18,6 +18,7 @@ public class App extends Huisdier{
 		Hamster hamster = new Hamster("Fluffy");
 		Huisdier dier3 = hamster;
 		
+		
 		System.out.print("Naam Hond: " + dier.getNaam() + " Geluid: ");
 		hond.maakGeluid();
 		System.out.print(" ");
