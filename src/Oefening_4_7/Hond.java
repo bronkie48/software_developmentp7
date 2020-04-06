@@ -9,6 +9,10 @@ public class Hond extends Huisdier{
 		System.out.print("Woof");
 	}
 	public void Kwispel() {
-		System.out.println("en de hond kwispelt");
+		System.out.print("en de hond kwispelt");
+	}
+	public String toString() {
+		String s =  "Hond naam: " + getNaam() + " maakt geluid ";
+		return s;
 	}
 }

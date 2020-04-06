@@ -15,11 +15,11 @@ public class Dierenwinkel  {
 	public void setDier(ArrayList<Huisdier> dier) {
 		this.dier = dier;
 	}
-	
 	public void voegToe(ArrayList<Huisdier> dieren) {
 		this.dier = dieren;
 	}
 	public void printOverzicht() {
-		System.out.println("Dierenlijst: ");
+		System.out.println("Dierenlijst array: " + dier);
+		System.out.println("\rDierenlijst: ");
 	}
 }

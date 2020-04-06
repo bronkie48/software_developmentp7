@@ -7,4 +7,8 @@ public class Hamster extends Huisdier {
 	public void maakGeluid(){
 		System.out.print("Ghehehe");
 	}
+	public String toString() {
+		String s =  "Hamster naam: " + getNaam() + " maakt geluid ";
+		return s;
+	}
 }

@@ -6,20 +6,20 @@ import Oefening_4_1.Product;
 
 public class App{
 	public static void main(String[] args) {
-		Huisdier hond = new Hond("Rex");
-		Huisdier kat = new Kat("Snowy");
-		Huisdier hamster = new Hamster("Pluisje");
 		
 		ArrayList<Huisdier> dier = new ArrayList<Huisdier>();
-		dier.add(hond);
-		dier.add(kat);
-		dier.add(hamster);
+		dier.add(new Hond("Rex"));
+		dier.add(new Kat("Snowy"));
+		dier.add(new Hamster("Pluisje"));
 		
 		Dierenwinkel winkel = new Dierenwinkel(dier);
 		
 		winkel.printOverzicht();
+		
+		// In een for loop door de lijst heen gaan en
+		// dan de to string van de type classe (hond,hamster en kat) die dan geerft wprdt.
 		for(Huisdier dieren : dier) {
-			System.out.print("Naam dier " + dieren.getNaam() + " maakt geluid ");
+			System.out.print(dieren.toString());
 			dieren.maakGeluid();
 			System.out.print("\r");
 		}

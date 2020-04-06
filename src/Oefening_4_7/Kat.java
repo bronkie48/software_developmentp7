@@ -10,4 +10,8 @@ public class Kat extends Huisdier {
 	public void Spin() {
 		System.out.println("en de kat spint");
 	}
+	public String toString() {
+		String s =  "Kat naam: " + getNaam() + " maakt geluid ";
+		return s;
+	}
 }
