@@ -1,6 +1,6 @@
-package Oefening_4_7;
+package Oefening_4_8;
 
-public class Kat extends Huisdier {
+public class Kat extends Huisdier implements Klimmer{
 	Kat (String naam){
 		super(naam);
 	}
@@ -9,5 +9,8 @@ public class Kat extends Huisdier {
 	}
 	public void Spin() {
 		System.out.println("spinnen");
+	}
+	public void Klimmen() {
+		System.out.println("klimmen");
 	}
 }

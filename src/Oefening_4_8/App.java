@@ -1,8 +1,8 @@
-package Oefening_4_7;
+package Oefening_4_8;
 
 import java.util.ArrayList;
 
-import Oefening_4_1.Product;
+
 
 public class App{
 	public static void main(String[] args) {
@@ -15,6 +15,10 @@ public class App{
 		Dierenwinkel winkel = new Dierenwinkel(dier);
 		
 		winkel.printOverzicht();
+		
+		// In een for loop door de lijst heen gaan en
+		// dan de to string van de type classe (hond,hamster en kat) die dan geerft wprdt.
+		}
 	}
 
-}
+
