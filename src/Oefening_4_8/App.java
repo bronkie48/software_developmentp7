@@ -2,8 +2,6 @@ package Oefening_4_8;
 
 import java.util.ArrayList;
 
-
-
 public class App{
 	public static void main(String[] args) {
 		
